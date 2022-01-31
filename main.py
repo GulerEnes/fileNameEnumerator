@@ -1,8 +1,8 @@
-import os
 from os.path import splitext
 from os import walk, rename
+import easygui as eg
 
-path = input("Absolute Path: ")
+path = eg.diropenbox()
 fileExt = list(input("File extentions (write comma seperated): ").split(","))
 start = int(input("Min number for naming: "))
 step = int(input("Step number for naming: "))
